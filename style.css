@@ -1,24 +1,8 @@
 .classJavaText a{
+    font-size: 42,35px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #3b6978;
+    color: black;
 }
-html{
-    scroll-behavior: smooth;
-}
-.arrowScroll{
-    text-align: center;
-    position:relative;
-    animation: 2s arrow infinite ease;
-}
-@keyframes arrow{
-    0%, 100%{
-        top:5px;
-    }
-    50%{
-        top: -5px;
-    }
-}
-
 #test{
     box-sizing: content-box;
 }
@@ -26,6 +10,7 @@ html{
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #cards img{
+    padding-left: 120px;
     align-content: center;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
@@ -46,7 +31,7 @@ html{
     font-size: 35px;
     text-align:center;
     padding-top: 50px;
-    color: black;    
+    color: black;
 }
 .bottomBody strong{
     text-align: center;
@@ -56,7 +41,7 @@ html{
     color: black;
 }
 .bottomBody a:hover{
-    color:#3b6978;
+    color:#5094f2;
 }
 .bottomBody img{
     padding-left: 100px;
@@ -67,14 +52,15 @@ html{
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url(images/body.png) no-repeat;
     background-size:cover;
-    z-index: 0; 
+    padding-left: 120px;
+    z-index: -1;
 }
 .headBody1{
     
 }
 
 ul li a:hover{
-    border-bottom: 2px solid #16817a;
+    border-bottom: 2px solid #5094f2;
 }
 /*#navigation{
     display: inline;
@@ -149,7 +135,7 @@ padding: 5px;
 #myImg {
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -213,59 +199,8 @@ padding: 5px;
   cursor: pointer;
 }
 
-.transition{
-    transition: all 0.7s;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-.transition:hover{
-    transition: all 0.7s;
-}
-a:hover{
-   transition: all 1s;
-    color: #16817a;
-}
-
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
 }
-
-.imgClass{
-    height: 100%;
-}
-.center{
-    text-align: center;
-}
-    .slider {
-        width: 20%;
-        
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-    
-    .slick-active {
-      opacity: .5;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
