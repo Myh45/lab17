@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Мозаїка</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="content-type" content="text/HTML; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body >
+    <h5>
+    <div class="classCenter">
+    Введіть розмір мозаїки: 
+    <input type="number" min="1" value="5"  id="size_a" style="width: 5%"> X
+    <input type="number" min="1" value="5" id="size_b" style="width: 5%"> (Максимум 10х10)<br><br>
+        Введіть ціну однієї плитки:
+    <input type="number" min="1" value="3" id="price" style="width: 5%"> грн.<br><br>
+        Введіть розмір плитки:   
+    <input type="number" min="1" value="3" id="width" style="width: 5%"> X
+    <input type="number" min="1" value="3" id="height" style="width: 5%"> см.(Оптимально 3х3) <br><br>
+        <button id="newField" type="button" onClick="calc_click();" class="btn btn-dark center">Намалювати поле</button>
+        </div>
+     <table id="field" border="0">
+</table>
+
+<div id = "results">
+  </div>
+    <div id = "priceResult" class="classCenter">
+        
+  </div>
+    <div class="classCenter">
+    <button type="button" id="restart" onClick="restart();" class="btn btn-dark center"><a href="index.html">Створити нове поле</a></button>
+    </div>
+    </h5>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+
+
