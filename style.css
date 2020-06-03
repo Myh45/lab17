@@ -1,8 +1,24 @@
 .classJavaText a{
-    font-size: 42,35px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black;
+    color: #3b6978;
 }
+html{
+    scroll-behavior: smooth;
+}
+.arrowScroll{
+    text-align: center;
+    position:relative;
+    animation: 2s arrow infinite ease;
+}
+@keyframes arrow{
+    0%, 100%{
+        top:5px;
+    }
+    50%{
+        top: -5px;
+    }
+}
+
 #test{
     box-sizing: content-box;
 }
@@ -10,7 +26,6 @@
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #cards img{
-    padding-left: 120px;
     align-content: center;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
@@ -31,7 +46,7 @@
     font-size: 35px;
     text-align:center;
     padding-top: 50px;
-    color: black;
+    color: black;    
 }
 .bottomBody strong{
     text-align: center;
@@ -41,7 +56,7 @@
     color: black;
 }
 .bottomBody a:hover{
-    color:#5094f2;
+    color:#3b6978;
 }
 .bottomBody img{
     padding-left: 100px;
@@ -52,15 +67,14 @@
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url(images/body.png) no-repeat;
     background-size:cover;
-    padding-left: 120px;
-    z-index: -1;
+    z-index: 0; 
 }
 .headBody1{
     
 }
 
 ul li a:hover{
-    border-bottom: 2px solid #5094f2;
+    border-bottom: 2px solid #16817a;
 }
 /*#navigation{
     display: inline;
@@ -135,7 +149,7 @@ padding: 5px;
 #myImg {
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -199,8 +213,59 @@ padding: 5px;
   cursor: pointer;
 }
 
+.transition{
+    transition: all 0.7s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.transition:hover{
+    transition: all 0.7s;
+}
+a:hover{
+   transition: all 1s;
+    color: #16817a;
+}
+
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
 }
+
+.imgClass{
+    height: 100%;
+}
+.center{
+    text-align: center;
+}
+    .slider {
+        width: 20%;
+        
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
