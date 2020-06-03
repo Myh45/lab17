@@ -18,13 +18,21 @@ html{
         top: -5px;
     }
 }
+
 .room{
     background-image: url(images/table.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
+    background-size: 1400px 700px;
+}
+.room img{
+    size: 1200px 700px;
 }
 #test{
     box-sizing: content-box;
+}
+.room img{
+    width: 10px;
 }
 .classNav{  
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;

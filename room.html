@@ -72,12 +72,12 @@
     </div> 
       </div>
         
-        <div class="col-md-12">
-        <section class="autoplay classCenterSlick room">
+        <div class="col-md-12 room">
+        <section class="play">
             
-            <img src="images/slide1-01.png">
-            <img src="images/slide1-02.png">
-            <img src="images/slide1-03.png">
+            <img class="classCenterSlick" src="images/slide1-01.png"  width="800" height="700">
+            <img class="classCenterSlick" src="images/slide1-03.png"  width="800" height="700">
+            <img class="classCenterSlick" src="images/slide1-02.png"  width="800" height="700">
              
         </section>
         </div>
@@ -137,14 +137,11 @@ span.onclick = function() {
 });
     </script>
         <script>
-        $('.autoplay').slick({
+        $('.play').slick({
   autoplay: true,
     Speed: 100,
     slidesToShow: 1,
-  fade: true,
-  
-  centerMode:true,
-  cssEase: 'linear'
+  fade: true
 });
         </script>
         <script>
