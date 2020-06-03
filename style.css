@@ -18,7 +18,11 @@ html{
         top: -5px;
     }
 }
-
+.room{
+    background-image: url(images/table.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 #test{
     box-sizing: content-box;
 }
@@ -91,6 +95,13 @@ ul li a:hover{
 }
 .classPadding{
     padding: 100px;
+}
+.classCenterSlick{
+    text-align: center;
+    
+}
+.classCenterSlick img{
+    width: 80%;
 }
 #footer p{
     font-size: 14px;
